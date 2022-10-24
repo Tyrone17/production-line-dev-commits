@@ -1,0 +1,57 @@
+@import '~antd/es/style/themes/default.less';
+
+.headerDropdown > * {
+  background-color: @popover-bg;
+  border-radius: 4px;
+  box-shadow: @shadow-1-down;
+}
+
+.headerMenu {
+	:global(.anticon) {
+			margin-right: 8px;
+	}
+	:global(.ant-dropdown-menu-item) {
+			min-width: 160px;
+	}
+}
+
+.headerAction {
+	display: flex;
+	align-items: center;
+	height: 48px;
+	padding: 0 12px;
+	cursor: pointer;
+	transition: all 0.3s;
+	&:hover {
+		background: rgba(122, 43, 43, 0.025);
+	}
+	&:global(.opened) {
+		background: rgba(122, 43, 43, 0.025);
+	}
+}
+
+.headerAvatar {
+	margin-right: 8px;
+	color: @primary-color;
+	vertical-align: top;
+	background: rgba(255, 255, 255, 0.85);
+}
+
+@media screen and (max-width: @screen-xs) {
+  .headerDropdown {
+    width: 100% !important;
+  }
+  .headerDropdown > * {
+    border-radius: 0 !important;
+  }
+}
+
+@media only screen and (max-width: @screen-md) {
+  .headerName {
+    display: none;
+  }
+	.headerAvatar {
+		margin-right: 0;
+	}
+}
+

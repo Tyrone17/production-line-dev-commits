@@ -1,0 +1,73 @@
+@import '~antd/es/style/themes/default.less';
+
+.passportContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: -24px;
+  overflow: auto;
+  background: @layout-body-background;
+}
+
+.passportContent {
+  flex: 1;
+  padding: 32px 0;
+}
+
+.passportTop {
+  text-align: center;
+  .passportHeader {
+    height: 44px;
+    line-height: 44px;
+    a {
+      text-decoration: none;
+    }
+  }
+  .passportLogo {
+    height: 44px;
+    margin-right: 16px;
+    vertical-align: passportTop;
+  }
+  .passportTitle {
+    position: relative;
+    top: 2px;
+    color: @heading-color;
+    font-weight: 600;
+    font-size: 33px;
+    font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  }
+  .passportDesc {
+    margin-top: 12px;
+    margin-bottom: 40px;
+    color: @text-color-secondary;
+    font-size: @font-size-base;
+  }
+}
+
+.passportMain {
+  width: 368px;
+  margin: 0 auto;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  :global {
+    .antd-pro-passport-submit {
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .passportContainer {
+    background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+    background-repeat: no-repeat;
+    background-position: center 110px;
+    background-size: 100%;
+  }
+
+  .passportContent {
+    padding: 32px 0 24px;
+  }
+}
