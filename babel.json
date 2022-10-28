@@ -1,0 +1,45 @@
+{
+  "stories": [
+    {
+      "title": "Review dev code",
+      "created": 1666983392923,
+      "submissionHistory": {},
+      "versions": [
+        "03ed094e-36f7-4aa6-b0b1-4c4969e3e2e6"
+      ],
+      "id": "2f6d3349-4bcc-4e45-b9b4-d58b27135ae0"
+    }
+  ],
+  "versions": [
+    {
+      "storyId": "2f6d3349-4bcc-4e45-b9b4-d58b27135ae0",
+      "name": "draft",
+      "wordCount": 4,
+      "created": 1666983392928,
+      "statistics": {},
+      "id": "03ed094e-36f7-4aa6-b0b1-4c4969e3e2e6",
+      "modified": 1666983436600
+    }
+  ],
+  "backups": [
+    {
+      "timestamp": 1666983389022,
+      "localPath": "/home/pi/Documents/BabelWorkspaceBackups/babel-2022-10-28.backup.zip",
+      "cloudProviders": [],
+      "id": "316edc47-0bf3-4a0c-a39b-ed770421f7ac"
+    }
+  ],
+  "activity": [
+    {
+      "date": "2022-10-28",
+      "entries": [
+        {
+          "storyId": "2f6d3349-4bcc-4e45-b9b4-d58b27135ae0",
+          "wordCount": 4,
+          "initialWordCount": -4
+        }
+      ],
+      "id": "47e619ef-61a0-406c-a600-1d3c2064008d"
+    }
+  ]
+}
