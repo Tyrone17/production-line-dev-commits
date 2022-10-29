@@ -1,6 +1,6 @@
 var serial = Date.now();
 let form = document.forms['contact-form'];
-let formradios = document.getElementsByClassName('form-check-input');
+//let formradios = document.getElementsByClassName('form-check-input');
 
  function setSerial() {
      const serialNo = "TSB_" + serial;
@@ -15,22 +15,3 @@ let formradios = document.getElementsByClassName('form-check-input');
      }
      window.location("/index1.html");
  }
-
-// function radioValidation() {
-//     //.form-check-input:checked
-    
-    
-//     // formradios.addEventListener('onchange', e => {
-//     //     e.preventDefault()
-//     //   })
-
-// }
-
-{% comment %} var test = document.getElementsByClassName('form-check-input');
-let tar = test[0].checked
-
-if (tar = true) {
-    console.log(tar)
-} else {
-    console
-} {% endcomment %}
