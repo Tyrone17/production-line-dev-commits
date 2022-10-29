@@ -15,8 +15,8 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
-      <meta name="description" content=""> -->
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content=""> 
       <meta name="author" content="@Tyrone_Maasdorp" >
       <title>TechServ Business IT &#169 2022</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -55,25 +55,25 @@
       <form id="contact-form" method="post" name="contact-form" autocomplete="" role="form" class="cover-container">
         <div class="row">
             <div class="row-cols-md-3">
-                <label for="firstname">Name <span class="blue">*</span></label>
+                <label for="firstname"><strong>Name </strong><span class="blue">*</span></label>
                 <input required type="text" name="fname" class="form-control" placeholder="Enter your first name" id="fname" value="">
                 <p class="comments">  </p>
             </div>
 
             <div class="row-cols-md-3">
-                <label for="lastname">Surname <span class="blue"></span></label>
+                <label for="lastname"><strong>Surname </strong><span class="blue"></span></label>
                 <input required type="text" name="lname" class="form-control" placeholder="Enter your last name" id="lname" value="">
                 <p class="comments"> </p>
             </div>
 
             <div class="row-cols-md-12">
-                <label for="email">Email <span class="blue">*</span></label>
+                <label for="email"><strong>Email </strong><span class="blue">*</span></label>
                 <input required  type="email" name="email" class="form-control" placeholder="Enter your email" id="email" value=" ">
                 <p class="comments"> </p>
             </div>
 
             <div class="row-cols-md-12">
-                <label for="phone">Mobile number<span class="blue">*</span></label>
+                <label for="phone"><strong><strong>Mobile number</strong></strong><span class="blue">*</span></label>
                 <input required type="tel" name="phone" class="form-control" placeholder="Enter your mobile number" id="phone" value="" onchange="setSerial()">
                 <br>
                 <p class="comments">Do you use this number for WhatsApp and/or Telegram as well? </p>
@@ -94,19 +94,19 @@
             <p></p>
             <tr></tr>
             <div class="row-cols-md-12">
-              <p><a href="https://docs.google.com/document/d/e/2PACX-1vRTOe1tU2N0SJFmwYH1Pc54qcAtrDepJl8aoRa_u3i0RbTHmTDhXUDdVFUofQZir6gS4dYX9mONIhxM/pub"><strong style ="color: #d82c2e">We will respect you AND POPIA!</strong></a></p>
+              <p><a href="https://docs.google.com/document/d/e/2PACX-1vRTOe1tU2N0SJFmwYH1Pc54qcAtrDepJl8aoRa_u3i0RbTHmTDhXUDdVFUofQZir6gS4dYX9mONIhxM/pub"><strong style ="color: #d82c2e"> Terms of Service </strong></a></p>
               <tr></tr>
               <p></p>
           </div>
              <div class="row-cols-md-12">
-                <label for="Ticket Type">Service Type<span class="blue">*</span></label>
+                <label for="Ticket Type"><strong>Service Type</strong><span class="blue">*</span></label>
                 <div class="form-group">
                   <select class="form-control" id="ticketType" name="ticketType" placeholder="Choose your ticket type">
-                    <option value="androidRelated">Android related</option>
-                    <option value="mircosoftRelated">Azure/Office related</option>
-                    <option value="desktopRelated">Desktop related</option>
                     <option value="googleRelated">Google related</option>
-                    <option value="laptopRelated">Laptop related</option>
+                    <option value="androidRelated">Android related</option>
+                    <option value="mircosoftRelated">Microsoft related</option>
+                    <option value="pcNoteRelated">PC/notebook related</option>
+                    <option value="consultancyRelated">IT consultancy</option>
                     <option value="generalIT">Other topic not specificed</option>
                   </select>
                 </div>
@@ -114,21 +114,24 @@
             </div>
 
             <div class="row-cols-md-12">
-                <label for="message">Service query<span class="blue">*</span></label>
+                <label for="message"><strong>Service query</strong><span class="blue">*</span></label>
                 <textarea required  type="text" name="message" class="form-control" placeholder="Enter your message" id="message" value=" "></textarea>
                 <p class="comments">  </p>
             </div>
              <div class="form-check mb-3">
                 <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" name="remember" id="remember"> Remember me
+                    <input class="form-check-input" type="checkbox" name="remember" id="remember"><strong> I accept the Terms of Service above </strong>
                 </label>
+            </div>
+            <div style="form-group">
+              <input  type="text" name="check" class="form-control" id="check" value="">
             </div>
             <div class="row-cols-md-12">
                 <input style ="background-color: rgba(55, 226, 21, 0.959);" type="submit" class="btn btn-default" value="Send service request">
                 <!--<a href="#" class="btn btn-lg btn-default">Learn more</a>-->
                 <!--We need to add to the php 'Thank you message' an if statement. To continue back to home or to login in and view ticket-->
             <script> 
-            let scriptURL = 'https://script.google.com/macros/s/AKfycbwYp9JgRO4RvY67-AIephgxMzq4YRgbq_uDN6mY5wEPc78hMWbMJxxj2w8Y4rNvAe_Q6A/exec';
+            let scriptURL = 'https://script.google.com/macros/s/AKfycbzLHY3oJtDKbicVonLrM7rqVydIUcreF8AbNeC-OUPLD8QR1MvAbHRVCqKDeN53At1t4Q/exec';
             let form = document.forms['contact-form'];
           
             form.addEventListener('submit', e => {
@@ -139,7 +142,6 @@
             });
            
             </script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
             <script src="js/script.js"></script>
             </div>
         </div>

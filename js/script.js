@@ -1,11 +1,12 @@
 var serial = Date.now();
-//let formradios = document.getElementsByClassName('form-check-input');
+var serialNo;
 
- function setSerial() {
-    var serialNo = "TSB_" + serial;
-    document.getElementById('check').value = serialNo;
- };
+function setSerial() {
+   serialNo = "TSB_" + serial;
+   document.getElementById('check').value = serialNo;
+   //return serialNo;
+};
 
- function message () {
-    alert("Your request" + serialNo + " was logged successfully!")
- };
+function message () {
+   confirm("Your request " + serialNo + " was logged successfully!");
+};
