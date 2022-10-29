@@ -8,10 +8,5 @@ let form = document.forms['contact-form'];
  };
 
  function message () {
-    if (confirm("Confirm that you understand that you are asking us for help and accept our T&Cs!") == true) {
-        
-    } else {
-        response = "You canceled, next time perhaps!"
-     }
-     window.location("/index1.html");
+    alert("Form is locked and loaded for one our Support agents - thank you!");
  }
