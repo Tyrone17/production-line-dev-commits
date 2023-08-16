@@ -11,6 +11,9 @@
   "description": "",
   "dependencies": {
     "apex-publish-static-files": "^2.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
     "react-environment-setup": "^1.0.15"
   }
 }
